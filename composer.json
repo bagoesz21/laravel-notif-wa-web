@@ -1,0 +1,46 @@
+{
+    "name": "bagoesz21/laravel-notif-wa-web",
+    "description": "Whatsapp notification channel for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BEEP",
+            "email": "bgs.beep21@gmail.com",
+            "homepage": "#"
+        }
+    ],
+    "homepage": "https://github.com/bagoesz21/laravel-notif-wa-web",
+    "keywords": [
+        "Laravel",
+        "LaravelNotifWaWeb"
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "~7|~8|~9",
+        "propaganistas/laravel-phone": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bagoesz21\\LaravelNotifWaWeb\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bagoesz21\\LaravelNotifWaWeb\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bagoesz21\\LaravelNotifWaWeb\\LaravelNotifWaWebServiceProvider"
+            ],
+            "aliases": {
+                "LaravelNotifWaWeb": "Bagoesz21\\LaravelNotifWaWeb\\Facades\\LaravelNotifWaWeb"
+            }
+        }
+    }
+}
