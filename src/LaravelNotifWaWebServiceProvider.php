@@ -62,7 +62,7 @@ class LaravelNotifWaWebServiceProvider extends ServiceProvider
         ], 'whatsapp.config');
 
         // $this->publishes([
-        //     __DIR__.'/../resources/lang' => resource_path('lang/vendor/laravel-notif-wa'),
+        //     __DIR__.'/../resources/lang' => $this->app->langPath('lang/vendor/laravel-notif-wa'),
         // ], 'whatsapp-lang');
 
         // Registering package commands.
