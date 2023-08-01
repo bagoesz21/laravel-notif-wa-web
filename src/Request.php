@@ -146,7 +146,7 @@ class Request
 
         switch (strtoupper($method)) {
             case 'GET':
-                $params = $payloads;
+                $params = array_merge($params, $payloads);
                 break;
             case 'POST':
                 $payloads = [
