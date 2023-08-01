@@ -24,6 +24,6 @@ class WhatsappChannel
 
         $wa = WhatsappService::make();
 
-        $wa->sendMessage($phone, $message);
+        $wa->message()->sendText($phone, $message);
     }
 }

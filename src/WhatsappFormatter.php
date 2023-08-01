@@ -32,29 +32,50 @@ class WhatsappFormatter
         return (new $class());
     }
 
+    /**
+     * @param string $text
+     * @param string $format
+     * @return string
+     */
     public function build($text, $format)
     {
         return sprintf("%s$text%s", $format, $format);
     }
 
+    /**
+     * @param string $text
+     * @return string
+     */
     public function bold($text)
     {
         $format = Arr::get($this->config, 'bold');
         return $this->build($text, $format);
     }
 
+    /**
+     * @param string $text
+     * @return string
+     */
     public function italic($text)
     {
         $format = Arr::get($this->config, 'italic');
         return $this->build($text, $format);
     }
 
+    /**
+     * @param string $text
+     * @return string
+     */
     public function strike($text)
     {
         $format = Arr::get($this->config, 'strike');
         return $this->build($text, $format);
     }
 
+    /**
+     * @param string $text
+     * @return string
+     */
     public function monospace($text)
     {
         $format = Arr::get($this->config, 'monospace');
